@@ -4,18 +4,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Documentation for Kiwi BDD">
+        
         <meta name="author" content="Kiwi Contributors">
-        <link rel="canonical" href="https://github.com/kiwi-bdd/Kiwi/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Kiwi Documentation</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://github.com/kiwi-bdd/Kiwi/About/Contributing/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Welcome to Kiwi! - Kiwi Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png">
@@ -31,10 +31,10 @@
 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Kiwi Documentation</a>
+                <a class="navbar-brand" href="../..">Kiwi Documentation</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,8 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
@@ -89,13 +89,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
+            <li class="nav-item" data-level="1"><a href="#welcome-to-kiwi" class="nav-link">Welcome to Kiwi!</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-level="2"><a href="#reporting-bugs" class="nav-link">Reporting Bugs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-level="2"><a href="#pull-requests" class="nav-link">Pull Requests</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -106,21 +106,36 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h1 id="welcome-to-kiwi">Welcome to Kiwi!</h1>
+<p>We're building a BDD library that is exquisitely simple to setup and use,
+and we'd love your help!</p>
+<h2 id="reporting-bugs">Reporting Bugs</h2>
+<p>Kiwi currently uses two channels for reporting bugs:</p>
+<ol>
+<li>
+<p>If Kiwi isn't working as you'd expect it to, but you're not sure whether
+    you're using it correctly, please send a message to the
+    <a href="https://groups.google.com/forum/#!forum/kiwi-bdd">Kiwi Google group</a>.</p>
+<p>Once your issue has been resolved, please consider contributing to the
+<a href="https://github.com/allending/Kiwi/wiki">Wiki</a> to help people
+who might experience similar issues in the future.</p>
+</li>
+<li>
+<p>If you're sure that you're using Kiwi correctly, but Kiwi still does not
+    behave as you'd expect it to, you may have found a bug. If no one
+    has <a href="https://github.com/allending/Kiwi/issues?state=open">already reported the issue</a>,
+    please <a href="https://github.com/allending/Kiwi/issues/new">submit a new issue</a>,
+    and include any and all information maintainers might need to fix the problem.
+    It's not easy to fix bugs, but detailed reports help!</p>
+</li>
+</ol>
+<h2 id="pull-requests">Pull Requests</h2>
+<p>Our work flow is a typical GitHub flow, where contributors fork the
+<a href="https://github.com/allending/Kiwi">Kiwi repository</a>, make their changes on branch,
+and submit a pull request.</p>
+<p>Please include a description of your changes with your pull request.
+All pull requests that involve changes to the source code should include
+tests that prove the changes behave as stated in the pull request message.</p></div>
             </div>
         </div>
 
@@ -130,11 +145,11 @@ docs/
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -202,8 +217,3 @@ docs/
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1
-Build Date UTC : 2020-03-28 03:06:18
--->
